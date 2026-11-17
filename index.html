@@ -556,7 +556,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 </footer>
 </main>
 
-<audio id="bgm" src="assets/music.mp3" loop preload="none"></audio>
+<audio id="bgm" src="music.mp3" loop preload="none"></audio>
 <canvas id="petals" aria-hidden="true"></canvas>
 <button id="musicBtn" type="button" aria-pressed="false" aria-label="Music" hidden>
   <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z" fill="currentColor"/><path d="m16 9 5 6m0-6-5 6"/></svg>
@@ -571,7 +571,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var $ = function (id) { return document.getElementById(id); };
 
-  /* ---------- Music: assets/music.mp3, controlled by our own button ---------- */
+  /* ---------- Music: music.mp3, controlled by our own button ---------- */
   var Music = (function () {
     var audio = $('bgm'), want = false, failed = false, onChange = function () {}, fadeT = 0;
     audio.volume = 0;
