@@ -212,39 +212,6 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 .bar .hi{margin-top:16px;padding-top:16px;border-top:1px solid rgba(232,198,111,.35);font:400 20px/1.65 'Tiro Devanagari Hindi',var(--f-body);color:var(--sand)}
 .bar .btn{margin-top:26px}
 
-/* ---------- RSVP ---------- */
-.rsvp{padding-top:34px}
-.rsvp .arch-cap{bottom:6%}
-.rsvp-t{font:400 27px/1.15 var(--f-display);color:var(--maroon);text-wrap:balance}
-.rsvp-hi{margin-top:4px;font:400 19px/1.3 var(--f-display);color:var(--gold)}
-.rsvp .arch-body{padding-top:2px}
-.rsvp-sub{font:italic 400 18px/1.4 var(--f-body);color:#5b3a30}
-.rsvp-opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
-.rsvp-btn{display:grid;place-content:center;gap:5px;min-height:76px;padding:8px 6px;border:1.5px solid var(--maroon);border-radius:6px;outline:1px solid rgba(107,20,36,.4);outline-offset:3px;cursor:pointer;font:inherit;text-align:center;-webkit-tap-highlight-color:transparent;transition:background-color .2s,color .2s,transform .15s}
-.rsvp-btn b{font:400 30px/1 var(--f-display)}
-.rsvp-btn span{font:500 16px/1.2 var(--f-body)}
-.rsvp-btn:active{transform:scale(.97)}
-.rsvp-yes{background:var(--maroon);color:var(--ivory)}
-.rsvp-yes span{color:var(--gold-lt)}
-.rsvp-yes:hover{background:var(--maroon-deep)}
-.rsvp-no{background:none;color:var(--maroon)}
-.rsvp-no span{color:#6b4a3a}
-.rsvp-no:hover{background:rgba(107,20,36,.08)}
-.rsvp-btn[disabled]{opacity:.6;cursor:default}
-.rsvp-done{display:none}
-.rsvp[data-state="done"] .rsvp-ask{display:none}
-.rsvp[data-state="done"] .rsvp-done{display:block}
-.rsvp-tick{display:block;width:62px;height:34px;margin:2px auto 8px;color:var(--gold)}
-.rsvp-thanks{font:400 24px/1.3 var(--f-display);color:var(--maroon);text-wrap:balance}
-.rsvp-thanks-hi{margin-top:6px;font:400 18px/1.5 'Tiro Devanagari Hindi',var(--f-body);color:#5b3a30}
-.rsvp-change{margin-top:10px}
-.rsvp-count{display:none;margin:22px auto 0;padding-top:16px;border-top:1px solid rgba(200,150,46,.5);text-align:center}
-.rsvp-count.on{display:block}
-.rsvp-count b{display:block;font:400 46px/1 var(--f-display);color:var(--maroon);font-variant-numeric:tabular-nums}
-.rsvp-count span{display:block;margin-top:6px;font:500 18px/1.3 var(--f-body);color:var(--ink)}
-.rsvp-count i{display:block;margin-top:2px;font:italic 400 16px/1.3 'Tiro Devanagari Hindi',var(--f-body);color:#6b4a3a}
-.rsvp-demo{display:none;margin-top:12px;font:italic 400 15px/1.3 var(--f-body);color:#8a6a5a}
-.rsvp-demo.on{display:block}
 
 /* ---------- closing ---------- */
 .close{padding-bottom:56px}
@@ -371,7 +338,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
       <div class="arch-head">
         <svg class="arch-svg" viewBox="-12 -12 224 152" aria-hidden="true" focusable="false"><path class="a-fill" d="M0,140 L0,124.9 A34.5,34.5 0 0 1 4.6,90.8 A34.5,34.5 0 0 1 18.2,59.1 A34.5,34.5 0 0 1 39.8,32.2 A34.5,34.5 0 0 1 67.7,12 A34.5,34.5 0 0 1 100,0 A34.5,34.5 0 0 1 132.3,12 A34.5,34.5 0 0 1 160.2,32.2 A34.5,34.5 0 0 1 181.8,59.1 A34.5,34.5 0 0 1 195.4,90.8 A34.5,34.5 0 0 1 200,124.9 L200,140 L200,142 L0,142 Z"/><path class="a-in" transform="translate(11 11)" d="M0,129 L0,111.2 A30.7,30.7 0 0 1 4.1,80.8 A30.7,30.7 0 0 1 16.2,52.6 A30.7,30.7 0 0 1 35.4,28.6 A30.7,30.7 0 0 1 60.2,10.7 A30.7,30.7 0 0 1 89,0 A30.7,30.7 0 0 1 117.8,10.7 A30.7,30.7 0 0 1 142.6,28.6 A30.7,30.7 0 0 1 161.8,52.6 A30.7,30.7 0 0 1 173.9,80.8 A30.7,30.7 0 0 1 178,111.2 L178,129"/><path class="a-line" d="M0,140 L0,124.9 A34.5,34.5 0 0 1 4.6,90.8 A34.5,34.5 0 0 1 18.2,59.1 A34.5,34.5 0 0 1 39.8,32.2 A34.5,34.5 0 0 1 67.7,12 A34.5,34.5 0 0 1 100,0 A34.5,34.5 0 0 1 132.3,12 A34.5,34.5 0 0 1 160.2,32.2 A34.5,34.5 0 0 1 181.8,59.1 A34.5,34.5 0 0 1 195.4,90.8 A34.5,34.5 0 0 1 200,124.9 L200,140"/></svg><svg class="arch-ic" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#rosette" x="-50" y="-50" width="100" height="100"/></svg>
         <div class="arch-cap">
-          <h3 class="fam-name">Rajendra Singh Shekhawat</h3>
+          <h3 class="fam-name">Rajendra Singh Shekhawat (Rishi)</h3>
           <p class="fam-role">the groom</p>
         </div>
       </div>
@@ -403,6 +370,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
     <p>Virendra Singh Rathore</p>
     <p>Ajay Singh Rathore</p>
     <p>Ravindra Singh Shekhawat (Bablu)</p>
+    <p>Pooran Singh Shekhawat</p>
   </div>
 </section>
 
@@ -491,41 +459,6 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
   </div>
 </section>
 
-<!-- ===== 07 RSVP ===== -->
-<section class="sec sec--maroon rsvp" id="rsvp" data-state="ask" aria-labelledby="h-rsvp">
-  <span class="edge"></span>
-  <div class="arch arch--ivory rise">
-    <div class="arch-head">
-      <svg class="arch-svg" viewBox="-12 -12 224 152" aria-hidden="true" focusable="false"><path class="a-fill" d="M0,140 L0,124.9 A34.5,34.5 0 0 1 4.6,90.8 A34.5,34.5 0 0 1 18.2,59.1 A34.5,34.5 0 0 1 39.8,32.2 A34.5,34.5 0 0 1 67.7,12 A34.5,34.5 0 0 1 100,0 A34.5,34.5 0 0 1 132.3,12 A34.5,34.5 0 0 1 160.2,32.2 A34.5,34.5 0 0 1 181.8,59.1 A34.5,34.5 0 0 1 195.4,90.8 A34.5,34.5 0 0 1 200,124.9 L200,140 L200,142 L0,142 Z"/><path class="a-in" transform="translate(11 11)" d="M0,129 L0,111.2 A30.7,30.7 0 0 1 4.1,80.8 A30.7,30.7 0 0 1 16.2,52.6 A30.7,30.7 0 0 1 35.4,28.6 A30.7,30.7 0 0 1 60.2,10.7 A30.7,30.7 0 0 1 89,0 A30.7,30.7 0 0 1 117.8,10.7 A30.7,30.7 0 0 1 142.6,28.6 A30.7,30.7 0 0 1 161.8,52.6 A30.7,30.7 0 0 1 173.9,80.8 A30.7,30.7 0 0 1 178,111.2 L178,129"/><path class="a-line" d="M0,140 L0,124.9 A34.5,34.5 0 0 1 4.6,90.8 A34.5,34.5 0 0 1 18.2,59.1 A34.5,34.5 0 0 1 39.8,32.2 A34.5,34.5 0 0 1 67.7,12 A34.5,34.5 0 0 1 100,0 A34.5,34.5 0 0 1 132.3,12 A34.5,34.5 0 0 1 160.2,32.2 A34.5,34.5 0 0 1 181.8,59.1 A34.5,34.5 0 0 1 195.4,90.8 A34.5,34.5 0 0 1 200,124.9 L200,140"/></svg><svg class="arch-ic" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#rosette" x="-50" y="-50" width="100" height="100"/></svg>
-      <div class="arch-cap">
-        <h2 class="rsvp-t" id="h-rsvp">So, are you coming?</h2>
-        <p class="rsvp-hi" lang="hi">क्या आप पधारेंगे?</p>
-      </div>
-    </div>
-    <div class="arch-body">
-      <div class="rsvp-ask">
-        <p class="rsvp-sub">Tap one to let the families know.</p>
-        <div class="rsvp-opts" role="group" aria-label="Are you coming?">
-          <button class="rsvp-btn rsvp-yes" id="rsvpYes" type="button"><b>Yes</b><span lang="hi">जी हाँ, पधारेंगे</span></button>
-          <button class="rsvp-btn rsvp-no" id="rsvpNo" type="button"><b>No</b><span lang="hi">क्षमा करें</span></button>
-        </div>
-      </div>
-      <div class="rsvp-done" id="rsvpDone" role="status" aria-live="polite">
-        <svg class="rsvp-tick" viewBox="0 0 60 32" aria-hidden="true"><use href="#lotus" fill="currentColor"/></svg>
-        <p class="rsvp-thanks" id="rsvpThanks"></p>
-        <p class="rsvp-thanks-hi" id="rsvpThanksHi" lang="hi"></p>
-        <button class="g-quiet rsvp-change" id="rsvpChange" type="button">Change my answer</button>
-      </div>
-      <div class="rsvp-count" id="rsvpCount" aria-live="polite">
-        <b id="rsvpN">0</b>
-        <span id="rsvpNtxt">guests are coming</span>
-        <i lang="hi">अब तक पधारने वाले मेहमान</i>
-      </div>
-      <p class="rsvp-demo" id="rsvpDemo">Preview mode: answers are saved on this device only.</p>
-    </div>
-  </div>
-</section>
-
 <!-- ===== 08 Closing ===== -->
 <section class="sec sec--ivory close" aria-labelledby="h-cl">
   <span class="edge"></span>
@@ -564,7 +497,6 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 </button>
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="rsvp-config.js"></script>
 <script>
 (function () {
   var root = document.documentElement;
@@ -692,85 +624,6 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
     if (am) wk.removeChild(am); if (an) wk.removeChild(an);
     wk.setAttribute('transform', 'translate(196 88)');
   }
-
-  /* ---------- RSVP: Yes / No, one answer per device, Yes answers are counted ----------
-     Counting needs a tiny backend (see README: Google Sheet + Apps Script). Put its web-app URL in rsvp-config.js.
-     With no URL the buttons still work, in preview mode: the answer is kept on this device only. */
-  (function () {
-    var cfg = window.RSVP_CONFIG || {};
-    var endpoint = String(cfg.endpoint || '').trim();
-    var KEY = 'rc-rsvp-v1';
-    var sec = $('rsvp'), btnY = $('rsvpYes'), btnN = $('rsvpNo');
-    var me = { id: '', answer: '', synced: true };
-    var shown = 0, countT = 0, busy = false;
-
-    try { var s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && s.id) me = s; } catch (e) {}
-    if (!me.id) me.id = 'g' + Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
-    function save() { try { localStorage.setItem(KEY, JSON.stringify(me)); } catch (e) {} }
-
-    function setCount(n) {
-      var box = $('rsvpCount'), el = $('rsvpN');
-      clearInterval(countT);
-      if (!(n > 0)) { box.classList.remove('on'); shown = 0; return; }
-      box.classList.add('on');
-      $('rsvpNtxt').textContent = n === 1 ? 'guest is coming' : 'guests are coming';
-      if (reduce || shown === n) { el.textContent = String(n); shown = n; return; }
-      var from = shown, t0 = Date.now();
-      countT = setInterval(function () {
-        var k = Math.min(1, (Date.now() - t0) / 900), e = 1 - Math.pow(1 - k, 3);
-        el.textContent = String(Math.round(from + (n - from) * e));
-        if (k >= 1) { clearInterval(countT); shown = n; }
-      }, 40);
-    }
-
-    function render() {
-      var yes = me.answer === 'yes';
-      btnY.setAttribute('aria-pressed', yes ? 'true' : 'false');
-      btnN.setAttribute('aria-pressed', me.answer === 'no' ? 'true' : 'false');
-      if (!me.answer) { sec.setAttribute('data-state', 'ask'); return; }
-      sec.setAttribute('data-state', 'done');
-      $('rsvpThanks').textContent = yes ? 'Thank you! We can’t wait to celebrate with you.' : 'We will miss you. Thank you for letting us know.';
-      $('rsvpThanksHi').textContent = yes ? 'धन्यवाद! आपके पधारने से हमारी खुशी दोगुनी होगी।' : 'आपकी कमी खलेगी। सूचित करने के लिए धन्यवाद।';
-    }
-
-    function api(method, body) {
-      var opts = { method: method };
-      var u = endpoint;
-      if (body) { opts.headers = { 'Content-Type': 'text/plain;charset=utf-8' }; opts.body = JSON.stringify(body); }
-      else u += (u.indexOf('?') > -1 ? '&' : '?') + 'action=count';
-      return fetch(u, opts)
-        .then(function (r) { if (!r.ok) throw new Error('http'); return r.json(); })
-        .then(function (d) { if (!d || d.ok === false) throw new Error('bad'); return d; });
-    }
-
-    function sync() {
-      if (!endpoint || !me.answer || busy) return;
-      var sent = me.answer;
-      busy = true;
-      api('POST', { id: me.id, answer: sent }).then(function (d) {
-        if (me.answer === sent) { me.synced = true; save(); }
-        setCount(d.yes | 0);
-      }).catch(function () { /* kept as unsynced; retried next time the page opens */ })
-        .then(function () { busy = false; });
-    }
-
-    function pick(answer) {
-      if (busy) return;
-      me.answer = answer; me.synced = !endpoint; save(); render();
-      if (endpoint) sync(); else setCount(answer === 'yes' ? 1 : 0);
-      $('rsvpDone').focus({ preventScroll: true });
-    }
-
-    $('rsvpDone').setAttribute('tabindex', '-1');
-    btnY.addEventListener('click', function () { pick('yes'); });
-    btnN.addEventListener('click', function () { pick('no'); });
-    $('rsvpChange').addEventListener('click', function () { sec.setAttribute('data-state', 'ask'); btnY.focus({ preventScroll: true }); });
-
-    render();
-    if (!endpoint) { $('rsvpDemo').classList.add('on'); setCount(me.answer === 'yes' ? 1 : 0); }
-    else if (!me.synced) sync();
-    else api('GET').then(function (d) { setCount(d.yes | 0); }).catch(function () {});
-  })();
 
   /* ---------- Share ---------- */
   var toastEl = $('toast'), toastT = 0;
