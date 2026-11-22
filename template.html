@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rajendra weds Chanda</title>
-<meta name="description" content="Wedding invitation of Rajendra Singh Shekhawat and Chanda Kanwar, Friday, 11 December 2026.">
+<title>Rajendra (Rishi) weds Chanda</title>
+<meta name="description" content="Wedding invitation of Rajendra Singh Shekhawat (Rishi) and Chanda Kanwar, Friday, 11 December 2026.">
 <meta name="theme-color" content="#3A0912">
-<meta property="og:title" content="Rajendra weds Chanda">
+<meta property="og:title" content="Rajendra (Rishi) weds Chanda">
 <meta property="og:description" content="A Royal Rajput Wedding. Friday, 11 December 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -114,6 +114,7 @@ a{color:inherit}
 .kicker{font:italic 500 21px/1.3 var(--f-body);color:var(--gold-lt)}
 .names{margin:14px 0 0;font:400 40px/1.12 var(--f-display);color:var(--ivory);text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.4)}
 .names span{display:block}
+.names .nick{display:inline;font-size:.55em;color:var(--gold-lt)}
 .names .weds{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px auto;max-width:300px;font:italic 400 24px/1 var(--f-body);color:var(--gold-lt)}
 .names .weds::before,.names .weds::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-lt))}
 .names .weds::after{background:linear-gradient(270deg,transparent,var(--gold-lt))}
@@ -152,6 +153,8 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 .fam-wrap{display:grid;gap:34px;margin-top:34px}
 .fam .arch-cap{bottom:6%}
 .fam-name{font:400 27px/1.15 var(--f-display);color:var(--gold-lt)}
+.fam-name--groom{font-size:24px}
+.fam-name .nick{display:block;margin-top:2px;font-size:.75em;color:var(--gold-lt)}
 .fam-role{margin-top:4px;font:italic 400 18px/1.3 var(--f-body);color:var(--sand)}
 .fam .arch-body{padding-top:0}
 .fam-side{margin-top:4px;font:italic 400 17px/1.3 var(--f-body);color:var(--sand)}
@@ -275,7 +278,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
     </div>
     <div class="arch-body">
       <p class="g-sm">You are invited to the wedding of</p>
-      <h2 class="g-names">Rajendra Singh Shekhawat<i>weds</i>Chanda Kanwar</h2>
+      <h2 class="g-names">Rajendra Singh Shekhawat (Rishi)<i>weds</i>Chanda Kanwar</h2>
       <p class="g-date">Friday, 11 December 2026</p>
       <div class="g-btns">
         <button class="btn btn--maroon" id="openMusic" type="button">Open with music</button>
@@ -293,7 +296,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
   <div class="moon" data-depth=".4" aria-hidden="true"></div>
   <div class="hero-text">
     <p class="kicker">A Royal Rajput Wedding</p>
-    <h1 class="names"><span>Rajendra Singh</span><span>Shekhawat</span><span class="weds">weds</span><span>Chanda Kanwar</span></h1>
+    <h1 class="names"><span>Rajendra Singh</span><span>Shekhawat <small class="nick">(Rishi)</small></span><span class="weds">weds</span><span>Chanda Kanwar</span></h1>
     <p class="date">Friday, 11 December 2026</p>
   </div>
   <div class="skyline" aria-hidden="true">
@@ -338,7 +341,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
       <div class="arch-head">
         @@ARCH@@
         <div class="arch-cap">
-          <h3 class="fam-name">Rajendra Singh Shekhawat (Rishi)</h3>
+          <h3 class="fam-name fam-name--groom">Rajendra Singh Shekhawat <small class="nick">(Rishi)</small></h3>
           <p class="fam-role">the groom</p>
         </div>
       </div>
@@ -484,7 +487,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 <footer class="foot">
   <span class="edge"></span>
   <svg class="orn" viewBox="0 0 190 26" aria-hidden="true"><path d="M0 13H70M120 13H190" stroke="currentColor" fill="none"/><use href="#lotus" x="70" y="1" width="50" height="26"/></svg>
-  <b>Rajendra &amp; Chanda</b>
+  <b>Rajendra (Rishi) &amp; Chanda</b>
   <p>Friday, 11 December 2026</p>
 </footer>
 </main>
@@ -630,7 +633,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
   function toast(msg) { toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(function () { toastEl.classList.remove('show'); }, 2200); }
   window.__toast = toast;
   var url = String(location.href).split('#')[0];
-  $('waBtn').href = 'https://wa.me/?text=' + encodeURIComponent('You are invited to the wedding of Rajendra & Chanda, Friday, 11 December 2026. ' + url);
+  $('waBtn').href = 'https://wa.me/?text=' + encodeURIComponent('You are invited to the wedding of Rajendra (Rishi) & Chanda, Friday, 11 December 2026. ' + url);
   $('copyBtn').addEventListener('click', function () {
     var done = function () { toast('Link copied'); };
     var fail = function () { toast('Copy the link from the address bar'); };

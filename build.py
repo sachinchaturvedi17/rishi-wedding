@@ -319,7 +319,7 @@ cal_text = (
     "Baraat Prasthan (बारात प्रस्थान): Fri 11 Dec, 3:15 PM, from Pundalsar to Sattasar. Wedding day: Fri 11 Dec 2026."
 )
 CAL = ('https://calendar.google.com/calendar/render?action=TEMPLATE&text='
-       + urllib.parse.quote('Rajendra & Chanda Wedding') + '&dates=20261209/20261212&details=' + urllib.parse.quote(cal_text))
+       + urllib.parse.quote('Rajendra (Rishi) & Chanda Wedding') + '&dates=20261209/20261212&details=' + urllib.parse.quote(cal_text))
 
 rep = {
     '@@SPRITE@@': SPRITE,
