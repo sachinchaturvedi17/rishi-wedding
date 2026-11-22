@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rajendra weds Chanda</title>
-<meta name="description" content="Wedding invitation of Rajendra Singh Shekhawat and Chanda Kanwar, Friday, 11 December 2026.">
+<title>Rajendra (Rishi) weds Chanda</title>
+<meta name="description" content="Wedding invitation of Rajendra Singh Shekhawat (Rishi) and Chanda Kanwar, Friday, 11 December 2026.">
 <meta name="theme-color" content="#3A0912">
-<meta property="og:title" content="Rajendra weds Chanda">
+<meta property="og:title" content="Rajendra (Rishi) weds Chanda">
 <meta property="og:description" content="A Royal Rajput Wedding. Friday, 11 December 2026.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,6 +153,8 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 .fam-wrap{display:grid;gap:34px;margin-top:34px}
 .fam .arch-cap{bottom:6%}
 .fam-name{font:400 27px/1.15 var(--f-display);color:var(--gold-lt)}
+.fam-name--groom{font-size:24px}
+.fam-name .nick{display:block;margin-top:2px;font-size:.75em;color:var(--gold-lt)}
 .fam-role{margin-top:4px;font:italic 400 18px/1.3 var(--f-body);color:var(--sand)}
 .fam .arch-body{padding-top:0}
 .fam-side{margin-top:4px;font:italic 400 17px/1.3 var(--f-body);color:var(--sand)}
@@ -339,7 +341,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
       <div class="arch-head">
         <svg class="arch-svg" viewBox="-12 -12 224 152" aria-hidden="true" focusable="false"><path class="a-fill" d="M0,140 L0,124.9 A34.5,34.5 0 0 1 4.6,90.8 A34.5,34.5 0 0 1 18.2,59.1 A34.5,34.5 0 0 1 39.8,32.2 A34.5,34.5 0 0 1 67.7,12 A34.5,34.5 0 0 1 100,0 A34.5,34.5 0 0 1 132.3,12 A34.5,34.5 0 0 1 160.2,32.2 A34.5,34.5 0 0 1 181.8,59.1 A34.5,34.5 0 0 1 195.4,90.8 A34.5,34.5 0 0 1 200,124.9 L200,140 L200,142 L0,142 Z"/><path class="a-in" transform="translate(11 11)" d="M0,129 L0,111.2 A30.7,30.7 0 0 1 4.1,80.8 A30.7,30.7 0 0 1 16.2,52.6 A30.7,30.7 0 0 1 35.4,28.6 A30.7,30.7 0 0 1 60.2,10.7 A30.7,30.7 0 0 1 89,0 A30.7,30.7 0 0 1 117.8,10.7 A30.7,30.7 0 0 1 142.6,28.6 A30.7,30.7 0 0 1 161.8,52.6 A30.7,30.7 0 0 1 173.9,80.8 A30.7,30.7 0 0 1 178,111.2 L178,129"/><path class="a-line" d="M0,140 L0,124.9 A34.5,34.5 0 0 1 4.6,90.8 A34.5,34.5 0 0 1 18.2,59.1 A34.5,34.5 0 0 1 39.8,32.2 A34.5,34.5 0 0 1 67.7,12 A34.5,34.5 0 0 1 100,0 A34.5,34.5 0 0 1 132.3,12 A34.5,34.5 0 0 1 160.2,32.2 A34.5,34.5 0 0 1 181.8,59.1 A34.5,34.5 0 0 1 195.4,90.8 A34.5,34.5 0 0 1 200,124.9 L200,140"/></svg><svg class="arch-ic" viewBox="-50 -50 100 100" aria-hidden="true"><use href="#rosette" x="-50" y="-50" width="100" height="100"/></svg>
         <div class="arch-cap">
-          <h3 class="fam-name">Rajendra Singh Shekhawat (Rishi)</h3>
+          <h3 class="fam-name fam-name--groom">Rajendra Singh Shekhawat <small class="nick">(Rishi)</small></h3>
           <p class="fam-role">the groom</p>
         </div>
       </div>
@@ -485,7 +487,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
 <footer class="foot">
   <span class="edge"></span>
   <svg class="orn" viewBox="0 0 190 26" aria-hidden="true"><path d="M0 13H70M120 13H190" stroke="currentColor" fill="none"/><use href="#lotus" x="70" y="1" width="50" height="26"/></svg>
-  <b>Rajendra &amp; Chanda</b>
+  <b>Rajendra (Rishi) &amp; Chanda</b>
   <p>Friday, 11 December 2026</p>
 </footer>
 </main>
@@ -631,7 +633,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
   function toast(msg) { toastEl.textContent = msg; toastEl.classList.add('show'); clearTimeout(toastT); toastT = setTimeout(function () { toastEl.classList.remove('show'); }, 2200); }
   window.__toast = toast;
   var url = String(location.href).split('#')[0];
-  $('waBtn').href = 'https://wa.me/?text=' + encodeURIComponent('You are invited to the wedding of Rajendra & Chanda, Friday, 11 December 2026. ' + url);
+  $('waBtn').href = 'https://wa.me/?text=' + encodeURIComponent('You are invited to the wedding of Rajendra (Rishi) & Chanda, Friday, 11 December 2026. ' + url);
   $('copyBtn').addEventListener('click', function () {
     var done = function () { toast('Link copied'); };
     var fail = function () { toast('Copy the link from the address bar'); };
