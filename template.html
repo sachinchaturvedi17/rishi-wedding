@@ -114,6 +114,7 @@ a{color:inherit}
 .kicker{font:italic 500 21px/1.3 var(--f-body);color:var(--gold-lt)}
 .names{margin:14px 0 0;font:400 40px/1.12 var(--f-display);color:var(--ivory);text-wrap:balance;text-shadow:0 2px 18px rgba(0,0,0,.4)}
 .names span{display:block}
+.names .nick{display:inline;font-size:.55em;color:var(--gold-lt)}
 .names .weds{display:flex;align-items:center;justify-content:center;gap:14px;margin:14px auto;max-width:300px;font:italic 400 24px/1 var(--f-body);color:var(--gold-lt)}
 .names .weds::before,.names .weds::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-lt))}
 .names .weds::after{background:linear-gradient(270deg,transparent,var(--gold-lt))}
@@ -275,7 +276,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
     </div>
     <div class="arch-body">
       <p class="g-sm">You are invited to the wedding of</p>
-      <h2 class="g-names">Rajendra Singh Shekhawat<i>weds</i>Chanda Kanwar</h2>
+      <h2 class="g-names">Rajendra Singh Shekhawat (Rishi)<i>weds</i>Chanda Kanwar</h2>
       <p class="g-date">Friday, 11 December 2026</p>
       <div class="g-btns">
         <button class="btn btn--maroon" id="openMusic" type="button">Open with music</button>
@@ -293,7 +294,7 @@ body.go .hero-text>:nth-child(4){animation-delay:1.2s}
   <div class="moon" data-depth=".4" aria-hidden="true"></div>
   <div class="hero-text">
     <p class="kicker">A Royal Rajput Wedding</p>
-    <h1 class="names"><span>Rajendra Singh</span><span>Shekhawat</span><span class="weds">weds</span><span>Chanda Kanwar</span></h1>
+    <h1 class="names"><span>Rajendra Singh</span><span>Shekhawat <small class="nick">(Rishi)</small></span><span class="weds">weds</span><span>Chanda Kanwar</span></h1>
     <p class="date">Friday, 11 December 2026</p>
   </div>
   <div class="skyline" aria-hidden="true">
